@@ -1,106 +1,158 @@
-<h2>WARNING (If you are updating from the 16/02/2025 update to the 21/02/2025 one):</h2>
-<p>Even if you are already using the previous version of LOS 20 on your device, it is <span class="bright-red">mandatory</span> that this update be performed from scratch (this is because the new update uses dynamic partitions meaning that you need to install LOS on your device as if you were installing it for the first time)</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 20px;
+        }
+        h2 {
+            color: #f44336;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #f44336;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        h5 {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            color: #f44336;
+            overflow-x: auto;
+        }
+        span.bright-red {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <h2>WARNING (If you are updating from the 16/02/2025 update to the 21/02/2025 one):</h2>
+    <p>Even if you are already using the previous version of LOS 20 on your device, it is <span class="bright-red">mandatory</span> that this update be performed from scratch (this is because the new update uses dynamic partitions meaning that you need to install LOS on your device as if you were installing it for the first time)</p>
 
-<h2>Installation guide for the updates BELOW<span class="bright-red"> 21/02/2025:</span></h2>
+    <h2>Installation guide for the updates BELOW <span class="bright-red">21/02/2025:</span></h2>
 
-<h3>Mate 20 Lite (sydney):</h3>
+    <h3>Mate 20 Lite (sydney):</h3>
 
-<h4>Requirements:</h4>
-<ul>
-    <li>lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</li>
-    <li>boot.img</li>
-    <li>recovery.img</li>
-    <li>recovery_vendor.img</li>
-</ul>
-
-<h4>Installation:</h4>
-
-<h5>First time installing:</h5>
-<ul>
-    <li>Unlock the bootloader</li>
-    <li>Install LineageOS Recovery (execute these commands via ADB & Fastboot on your PC while the phone is on fastboot mode and connected to the PC):
-        <pre>fastboot flash kernel boot.img</pre>
-        <pre>fastboot flash recovery_ramdisk recovery.img</pre>
-        <pre>fastboot flash recovery_vendor recovery_vendor.img</pre>
-    </li>
-    <li>Reboot the device to LOS recovery (With the hardware combo: Volume Up + Power)</li>
-    <li>Install the LineageOS ROM (while on LOS recovery):</li>
+    <h4>Requirements:</h4>
     <ul>
-        <li>Factory reset -> Format data/factory reset</li>
-        <li>Then go back to the main menu</li>
-        <li>Apply update -> Apply from ADB</li>
-        <pre>adb sideload lineage-20.0-20250221-RELEASE-sydney.zip</pre>
-        <li>Once it finishes, select Reboot system now</li>
+        <li>lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</li>
+        <li>boot.img</li>
+        <li>recovery.img</li>
+        <li>recovery_vendor.img</li>
     </ul>
-    <p><strong>!!! Enjoy :P !!!</strong></p>
-</ul>
 
-<h5>(If you wanna) Update the ROM (only from the update 19/01/2025 to the update 16/02/2025):</h5>
-<p>You can perform a dirty flash on each new update</p>
-<ul>
-    <li>Reboot the device to Lineage OS Recovery</li>
-    <pre>adb sideload lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</pre>
-    <li>Factory reset -> Format cache partitions</li>
-    <li>Then go back to the main menu</li>
-    <li>Reboot system now</li>
-</ul>
+    <h4>Installation:</h4>
 
-<h2>Installation guide for the updates ABOVE<span class="bright-red"> 21/02/2025:</span></h2>
-
-<h3>Mate 20 Lite (sydney):</h3>
-
-<h4>Requirements:</h4>
-<ul>
-    <li>lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</li>
-    <li>boot.img</li>
-    <li>recovery.img</li>
-    <li>recovery_vendor.img</li>
-</ul>
-
-<h4>Installation:</h4>
-
-<h5>First time installing:</h5>
-<ul>
-    <li>Unlock the bootloader</li>
-    <li>Install LineageOS Recovery (execute these commands via ADB & Fastboot on your PC while the phone is on fastboot mode and connected to the PC):
-        <pre>fastboot flash kernel boot.img</pre>
-        <pre>fastboot flash recovery_ramdisk recovery.img</pre>
-        <pre>fastboot flash recovery_vendor recovery_vendor.img</pre>
-    </li>
-    <li>Reboot the device to LOS recovery (With the hardware combo: Volume Up + Power)</li>
-    <li>Install the LineageOS ROM (while on LOS recovery):</li>
+    <h5>First time installing:</h5>
     <ul>
-        <li>Factory reset -> Format data/factory reset</li>
-        <li>Then go back to the main menu</li>
-        <li>Apply update -> Apply from ADB</li>
+        <li>Unlock the bootloader</li>
+        <li>Install LineageOS Recovery (execute these commands via ADB & Fastboot on your PC while the phone is on fastboot mode and connected to the PC):
+            <pre>fastboot flash kernel boot.img</pre>
+            <pre>fastboot flash recovery_ramdisk recovery.img</pre>
+            <pre>fastboot flash recovery_vendor recovery_vendor.img</pre>
+        </li>
+        <li>Reboot the device to LOS recovery (With the hardware combo: Volume Up + Power)</li>
+        <li>Install the LineageOS ROM (while on LOS recovery):</li>
+        <ul>
+            <li>Factory reset → Format data/factory reset</li>
+            <li>Then go back to the main menu</li>
+            <li>Apply update → Apply from ADB</li>
+            <pre>adb sideload lineage-20.0-20250221-RELEASE-sydney.zip</pre>
+            <li>Once it finishes, select Reboot system now</li>
+        </ul>
+        <p><strong>!!! Enjoy :P !!!</strong></p>
+    </ul>
+
+    <h5>(If you wanna) Update the ROM (only from the update 19/01/2025 to the update 16/02/2025):</h5>
+    <p>You can perform a dirty flash on each new update</p>
+    <ul>
+        <li>Reboot the device to Lineage OS Recovery</li>
         <pre>adb sideload lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</pre>
-        <li>Now it depends on you, if you don't want GApps then you can go back to the main menu and click on Reboot system now, but if you want them, continue to the next step without leaving to the main menu</li>
+        <li>Factory reset → Format cache partitions</li>
+        <li>Then go back to the main menu</li>
+        <li>Reboot system now</li>
     </ul>
-</ul>
 
-<h5>Installing GApps:</h5>
-<pre>adb sideload MindTheGapps-13.0.0-arm64-20231025_200931.zip</pre>
-<ul>
-    <li>Reboot system now</li>
-</ul>
-<p><strong>!!! Enjoy :D !!!</strong></p>
+    <h2>Installation guide for the updates ABOVE <span class="bright-red">21/02/2025:</span></h2>
 
-<h5>(If you wanna) Update the ROM:</h5>
-<p>You can perform a dirty flash on each new update</p>
-<ul>
-    <li>Reboot the device to Lineage OS Recovery</li>
-    <pre>adb sideload lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</pre>
-    <li>Factory reset -> Format cache partitions</li>
-    <li>Then go back to the main menu</li>
-    <li>Reboot system now</li>
-</ul>
+    <h3>Mate 20 Lite (sydney):</h3>
 
-<h5>Installing Magisk (for root, optional):</h5>
-<ul>
-    <li>Install the latest update of Magisk on Github</li>
-    <li>Extract boot.img from lineage-20.0-XXXXXXXX-RELEASE-sydney.zip (or use the one above from the requirements/downloads)</li>
-    <li>Patch this boot.img in Magisk</li>
-    <li>Extract the patched boot.img from the device</li>
-    <li>Flash the patched boot.img</li>
-    <pre>fastboot flash kernel magisk-patched-xxxx.img</pre>
-</ul>
+    <h4>Requirements:</h4>
+    <ul>
+        <li>lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</li>
+        <li>boot.img</li>
+        <li>recovery.img</li>
+        <li>recovery_vendor.img</li>
+    </ul>
+
+    <h4>Installation:</h4>
+
+    <h5>First time installing:</h5>
+    <ul>
+        <li>Unlock the bootloader</li>
+        <li>Install LineageOS Recovery (execute these commands via ADB & Fastboot on your PC while the phone is on fastboot mode and connected to the PC):
+            <pre>fastboot flash kernel boot.img</pre>
+            <pre>fastboot flash recovery_ramdisk recovery.img</pre>
+            <pre>fastboot flash recovery_vendor recovery_vendor.img</pre>
+        </li>
+        <li>Reboot the device to LOS recovery (With the hardware combo: Volume Up + Power)</li>
+        <li>Install the LineageOS ROM (while on LOS recovery):</li>
+        <ul>
+            <li>Factory reset → Format data/factory reset</li>
+            <li>Then go back to the main menu</li>
+            <li>Apply update → Apply from ADB</li>
+            <pre>adb sideload lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</pre>
+            <li>Now it depends on you, if you don't want GApps then you can go back to the main menu and click on Reboot system now, but if you want them, continue to the next step without leaving to the main menu</li>
+        </ul>
+    </ul>
+
+    <h5>Installing GApps:</h5>
+    <pre>adb sideload MindTheGapps-13.0.0-arm64-20231025_200931.zip</pre>
+    <ul>
+        <li>Reboot system now</li>
+    </ul>
+    <p><strong>!!! Enjoy :D !!!</strong></p>
+
+    <h5>(If you wanna) Update the ROM:</h5>
+    <p>You can perform a dirty flash on each new update</p>
+    <ul>
+        <li>Reboot the device to Lineage OS Recovery</li>
+        <pre>adb sideload lineage-20.0-XXXXXXXX-RELEASE-sydney.zip</pre>
+        <li>Factory reset → Format cache partitions</li>
+        <li>Then go back to the main menu</li>
+        <li>Reboot system now</li>
+    </ul>
+
+    <h5>Installing Magisk (for root, optional):</h5>
+    <ul>
+        <li>Install the latest update of Magisk on Github</li>
+        <li>Extract boot.img from lineage-20.0-XXXXXXXX-RELEASE-sydney.zip (or use the one above from the requirements/downloads)</li>
+        <li>Patch this boot.img in Magisk</li>
+        <li>Extract the patched boot.img from the device</li>
+        <li>Flash the patched boot.img</li>
+        <pre>fastboot flash kernel magisk-patched-xxxx.img</pre>
+    </ul>
+</body>
+</html>
+
