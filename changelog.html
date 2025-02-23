@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineageOS 20 ROM for Huawei Mate 20 Lite Changelog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #444;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
+        .bright-red {
+            color: red;
+        }
+        .credits a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .credits a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Original announcement (changelogs below):</h1>
+    <p>Android 13 is coming on your Huawei Mate 20 Lite - Kirin 710 with LineageOS 20!</p>
+
+    <h2>Devices Supported:</h2>
+    <p>Huawei Mate 20 Lite: Sydney</p>
+
+    <p>LineageOS 20 is a free, community built, aftermarket firmware distribution of Android 13 (Tiramisu) which is designed to increase performance and reliability over stock Android for your device.</p>
+
+    <p>LineageOS is based on the Android Open Source Project (AOSP) with extra contributions from many people within the Android community. It can be used without the need of having any Google applications installed. Linked below is a package from another Android project that restores Google parts. LineageOS still includes various hardware-specific code, which is also slowly being open-sourced anyway.</p>
+
+    <p>All the source code for LineageOS is available in the <a href="https://github.com/LineageOS" target="_blank">LineageOS Github repo</a>. And if you would like to contribute to LineageOS, please visit our <a href="http://review.lineageos.org/" target="_blank">Gerrit Code Review</a>. You can also view the Changelog for a full list of changes & features.</p>
+
+    <p class="warning">WARNING!<span class="bright-red"> Installing a custom ROM on your device can sometimes be difficult and also with unwanted consequences! Therefore, make sure that you understand exactly what risks this operation entails - you are the only one responsible for all actions taken on your device.</span></p>
+
+    <h2>Credits:</h2>
+    <ul class="credits">
+        <li><a href="https://xdaforums.com/m/11572895/" target="_blank">AltairFR</a></li>
+        <li><a href="https://xdaforums.com/m/8978978/" target="_blank">Rortiz2</a></li>
+        <li><a href="https://xdaforums.com/m/11205697/" target="_blank">A2L5E0X1</a></li>
+        <li><a href="https://xdaforums.com/m/9305611/" target="_blank">Its_Vixano</a></li>
+    </ul>
+
+    <h2>Reporting Bugs:</h2>
+    <p>DO NOT Report bugs if you're running a custom kernel or you have Xposed installed.</p>
+    <p>Instead, grab a logcat right after the problem has occurred. (Please include at least a few pages of the log, not just the last few lines, unless you know what you're doing)</p>
+    <p>If it's just a random reboot, grab <code>/sys/fs/pstore/console-ramoops</code> and <code>/sys/fs/pstore/dmesg-ramoops-0</code>. (Do not bother getting a logcat unless you can get it just before the reboot. A logcat after a reboot is useless)</p>
+    <p>If the problem disappears after running <code>setenforce 0</code> from a root shell, grab <code>/data/misc/audit/audit.log</code></p>
+    <p>Remember to provide as much info as possible. The more info you provide, the more likely that the bug will be solved. Please, do not report known issues. Any bug not reported in the bug report format below may be ignored.</p>
+
+    <h2>19/01/2025 Official release/changelog:</h2>
+    <h3>What's Working:</h3>
+    <ul>
+        <li>Touchscreen</li>
+        <li>Sensors</li>
+        <li>Lights</li>
+        <li>Audio</li>
+        <li>Video</li>
+        <li>Bluetooth</li>
+        <li>WiFi</li>
+        <li>WiFi Direct/Wireless Display</li>
+        <li>GPS</li>
+        <li>FM Radio</li>
+        <li>4G/data connectivity</li>
+        <li>Fingerprint sensor</li>
+        <li>Internal/External Storage</li>
+        <li>USB/ADB/MTP/USB-OTG</li>
+        <li>Off-mode Charging</li>
+        <li>Widevine DRM L1 (only for devices that support L1)</li>
+        <li>Camera</li>
+        <li>Encryption</li>
+        <li>Flip cover</li>
+        <li>Extra implementations: LiveDisplay, High touch sensitivity & Google Pixel Power management</li>
+        <li>Kernel updated to 4.9.337</li>
+        <li>Signed with private dev-keys</li>
+    </ul>
+
+    <h3>What's Not <span class="bright-red">Working:</span></h3>
+    <ul>
+        <li>VoLTE</li>
+        <li>NFC not yet implemented</li>
+        <li>Video decoder</li>
+        <li>SELinux is permissive</li>
+        <li>Bluetooth is not 100% stable (there are some random disconnection/interruption issues)</li>
+        <li>There could be also other minor issues!</li>
+        <li>Magisk (for root access)</li>
+    </ul>
+
+    <h2>16/02/2025 changelog:</h2>
+    <ul>
+        <li>Security patch updated to January 5, 2025</li>
+        <li>Kernel updated to v4.9.337</li>
+        <li>WiFi improved</li>
+        <li>WiFi 5GHz improved</li>
+        <li>WiFi direct/wireless display/screen cast - improved</li>
+        <li>Implemented NFC</li>
+        <li>Video decoder issue - fixed</li>
+        <li>Integrated KernelSU Next (for root access)</li>
+    </ul>
+
+    <p>Install the KernelSU-Next app (<a href="https://mega.nz/file/AEx1DYJI#lrKk3KgjYGWi25E3-mKbtJ-B55x593rRL7ZnrJgXNoM" target="_blank">link</a>) to ROOT your device!</p>
+
+    <p>Special thanks to <a href="https://xdaforums.com/m/11572895/" target="_blank">@AltairFR</a> for fixing a lot of issues (including video decoder issues)</p>
+
+    <h2>21/02/2025 changelog:</h2>
+    <ul>
+        <li>Security patch updated to February 5, 2025</li>
+        <li>Dynamic partitions have been added</li>
+        <li>Magisk has been fixed</li>
+        <li>Removed GApps!</li>
+    </ul>
+
+    <p class="warning">WARNING! Even if you are already using the previous version of LOS 20 on your device, it's mandatory that this update be performed from scratch (this is because the new update uses dynamic partitions meaning that you need to install LOS on your device as if you were installing it for the first time).</p>
+    <p>Also, GApps removed means that, if you want them, you have to sideload them yourself (This is explained on the installation guide).</p>
+</body>
+</html>
