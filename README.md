@@ -13,3 +13,5 @@ support as you can, because we never know.
 Credits :
 
 -AltairFR​ (https://xdaforums.com/m/11572895/)<br>-Rortiz2​ (https://xdaforums.com/m/8978978/)<br>-A2L5E0X1​ (https://xdaforums.com/m/11205697/)<br>-Its_Vixano ​(https://xdaforums.com/m/9305611/)<br>-Surdu_Petru (https://xdaforums.com/m/2335078/)
+
+Made by Matt19220
