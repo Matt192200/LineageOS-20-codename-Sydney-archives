@@ -12,7 +12,8 @@ support as you can, because we never know.
 
 Credits :
 
-    AltairFR​
-    Rortiz2​
-    A2L5E0X1​
-    Its_Vixano ​
+AltairFR​ (https://xdaforums.com/m/11572895/)
+Rortiz2​ (https://xdaforums.com/m/8978978/)
+A2L5E0X1​ (https://xdaforums.com/m/11205697/)
+Its_Vixano ​(https://xdaforums.com/m/9305611/)
+Surdu_Petru (https://xdaforums.com/m/2335078/)
