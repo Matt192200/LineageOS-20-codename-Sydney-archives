@@ -9,3 +9,10 @@ the devs have been replacing old versions with new one, meaning that they dont l
 for download anymore. Luckily, as a mistake, i kept them and forgot to delete them, which turned
 out to be a great choice. If you wanna support the devs, the links are down below, give them as much
 support as you can, because we never know.
+
+Credits :
+
+    AltairFR​
+    Rortiz2​
+    A2L5E0X1​
+    Its_Vixano ​
