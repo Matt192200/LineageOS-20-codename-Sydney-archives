@@ -14,4 +14,4 @@ Credits :
 
 -<a href="https://xdaforums.com/m/11572895/">AltairFR​</a><br>-<a href="https://xdaforums.com/m/8978978/">Rortiz2​</a><br>-<a href="https://xdaforums.com/m/11205697/">A2L5E0X1​​</a><br>-<a href="https://xdaforums.com/m/9305611/">Its_Vixano​</a><br>-<a href="https://xdaforums.com/m/2335078/">Surdu_Petru​</a>
 
-Made by Matt19220
+Made by SSMG4
